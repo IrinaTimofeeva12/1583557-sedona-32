@@ -804,7 +804,7 @@ h2 {
 .twitter-svg:hover {
   fill: rgba(104, 162, 202, 1);
 }
-/*рамка*/
+
 .twitter-svg:focus {
   fill: rgba(104, 162, 202, 1);
   border: 3px solid #83b3d3;
