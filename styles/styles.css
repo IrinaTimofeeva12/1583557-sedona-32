@@ -688,6 +688,7 @@ h2 {
   color: #000000;
   text-transform: uppercase;
   margin-top: 25px;
+  margin-bottom: 35px;
 }
 
 .useful-info {
@@ -2287,7 +2288,6 @@ h2 {
 /*-----------------------
 ---- visually hidden ----
 ---------------------- */
-
 .visually-hidden {
   position: absolute;
   width: 1px;
