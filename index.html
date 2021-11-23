@@ -144,6 +144,7 @@
                </div>
             </section>
           </main>
+
          <footer class="footer-container">
             <section class="mail-field">
                   <h2 class="subscribe">Подпишитесь на рассылку</h2>
@@ -219,7 +220,15 @@
                         <p class="card-item-description">Мотель</p>
                         </div>
                      </li>
-                     <button type="button" class="card-item-button button">
+                     <li class="card-item">
+                        <img class="popover-image" src="images/main/hotel-3-small.jpg" width="48" height="48" alt="villas-small">
+                        <div class="popover-text">
+                        <p class="card-item-title">Villas at Poco Diablo</p>
+                        <p class="card-item-description">Апартаменты</p>
+                        </div>
+                      </li>
+                      </ul>
+                     <button type="button" class="card-item-button1 button">
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                            <path d="M15.3 2.3H13.1H2.8H0.6C0.3 2.3 0 2.5 0 2.8C0 3.1 0.3 3.4 0.6 3.4H2.3V15.4C2.3 15.7 2.6 16 2.9 16H13.1C13.4 16 13.7 15.7 13.7 15.4V3.4H15.4C15.7 3.4 16 3.1 16 2.8C16 2.5 15.6 2.3 15.3 2.3ZM12.5 14.8H3.4V3.4H12.5V14.8Z" fill="black"/>
                            <path d="M6.19995 1.2H9.59995C9.89995 1.2 10.2 0.9 10.2 0.6C10.2 0.3 9.99995 0 9.69995 0H6.19995C5.89995 0 5.69995 0.3 5.69995 0.6C5.69995 0.9 5.89995 1.2 6.19995 1.2Z" fill="black"/>
@@ -228,15 +237,7 @@
                         </svg>
                         <span class="visually-hidden">Удалить из избранного</span>
                       </button>
-
-                     <li class="card-item">
-                        <img class="popover-image" src="images/main/hotel-3-small.jpg" width="48" height="48" alt="villas-small">
-                        <div class="popover-text">
-                        <p class="card-item-title">Villas at Poco Diablo</p>
-                        <p class="card-item-description">Апартаменты</p>
-                        </div>
-                     </li>
-                     <button type="button" class="card-item-button button">
+                     <button type="button" class="card-item-button2 button">
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                            <path d="M15.3 2.3H13.1H2.8H0.6C0.3 2.3 0 2.5 0 2.8C0 3.1 0.3 3.4 0.6 3.4H2.3V15.4C2.3 15.7 2.6 16 2.9 16H13.1C13.4 16 13.7 15.7 13.7 15.4V3.4H15.4C15.7 3.4 16 3.1 16 2.8C16 2.5 15.6 2.3 15.3 2.3ZM12.5 14.8H3.4V3.4H12.5V14.8Z" fill="black"/>
                            <path d="M6.19995 1.2H9.59995C9.89995 1.2 10.2 0.9 10.2 0.6C10.2 0.3 9.99995 0 9.69995 0H6.19995C5.89995 0 5.69995 0.3 5.69995 0.6C5.69995 0.9 5.89995 1.2 6.19995 1.2Z" fill="black"/>
@@ -245,8 +246,6 @@
                          </svg>
                         <span class="visually-hidden">Удалить из избранного</span>
                       </button>
-                  </ul>
-
                 <button class="popover-button">Все избранные</button>
                </div>
             </div>
@@ -263,8 +262,9 @@
                   <section class="modal-content">
                      <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
                         <p class="field-group search-form-date">
-                           <label for="search-date">Дата заезда:</label>
-                           <input class="search-form-field field-date-in" type="text" name="search-date" placeholder="27 апреля 2020">
+                           <label for="search-date">Дата заезда:
+                           <input class="search-form-field field-date-in" type="text" id="search-date" name="search-date" placeholder="27 апреля 2020">
+                           </label>
                            <svg class="calendar" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                            <path d="M5.5 10C5.8 10 6 9.8 6 9.5C6 9.2 5.8 9 5.5 9C5.2 9 5 9.2 5 9.5C5 9.8 5.2 10 5.5 10Z" fill="black"/>
                            <path d="M14 2H12V0H11V2H4V0H3V2H1C0.4 2 0 2.4 0 3V6V7V14C0 14.5 0.4 15 1 15H14C14.5 15 15 14.5 15 14V7V6V3C15 2.4 14.5 2 14 2ZM14 14H1V7H14V14ZM1 6V3H3V5H4V3H11V5H12V3H14V6H1Z" fill="black"/>
@@ -307,7 +307,7 @@
                               <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
                               </svg>
                             </button>
-                           <input class="search-form-field field-adults" type="number" name="search-adults" placeholder="2">
+                           <input class="search-form-field field-adults" type="number" id="search-adults" name="search-adults" placeholder="2">
                           <button class="plus-adults" type="button">
                             <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/>
@@ -322,7 +322,7 @@
                               <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
                               </svg>
                             </button>
-                          <input class="search-form-field field-childrens" type="number" name="search-childrens" placeholder="1">
+                          <input class="search-form-field field-childrens" type="number" id="search-childrens" name="search-childrens" placeholder="1">
                           <button class="plus-childrens" type="button">
                             <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/>
@@ -330,7 +330,7 @@
                            </button>
                         </p>
                           </div>
-                           <button class="info" type="button" data="tooltip">
+                           <button class="info" type="button">
                              <svg width="1" height="6" viewBox="0 0 1 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                              <path d="M0 6H1L1 0H0L0 6Z" fill="white"/>
                              </svg>
@@ -345,6 +345,7 @@
                     <button class="button search-form-button" type="button">Найти</button>
                </div>
             </div>
+
          </footer>
          <p class="visually-hidden">Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
       </div>
